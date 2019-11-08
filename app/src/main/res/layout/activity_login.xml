@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkprimary"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN PAGE"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlogin"
+        android:layout_marginTop="150dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etusername"
+        android:layout_marginTop="20dp"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpass"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="LOGIN"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:textColor="@color/black"
+        android:background="@color/red"
+        android:text="GOOGLE"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnfacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btngoogle"
+        android:text="FACEBOOK"
+        android:background="@color/blue"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnfacebook"
+        android:text="REGISTER"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/btnforgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnregister"
+        android:text="FORGOT PASSWORD"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
